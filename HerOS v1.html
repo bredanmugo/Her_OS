@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HerOS</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Color Palette */
+    :root {
+      --primary-blue: #a1c9f4;
+      --light-blue: #d1e8fc;
+      --light-pink: #ffe0e6;
+      --white: #ffffff;
+      --dark-blue: #4a90e2;
+    }
+    
+    /* Header and Navbar */
+    header {
+      background-color: var(--primary-blue);
+      color: var(--white);
+      padding: 1.5em;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--light-pink);
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    /* Section Styles */
+    .section-title {
+      color: var(--dark-blue);
+      font-size: 1.8em;
+      margin: 1em 0;
+      text-align: center;
+    }
+
+    .section-content {
+      padding: 1.5em;
+      background-color: var(--white);
+      margin: 2em auto;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-category {
+      margin-top: 2em;
+    }
+
+    .faq-category h3 {
+      color: var(--light-pink);
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .faq-item {
+      margin: 1em 0;
+    }
+
+    .faq-item p {
+      margin: 0.5em 0;
+    }
+
+    /* Subject Divs in Education */
+    .subject-div {
+      background-color: var(--light-blue);
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 6px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .subject-div:hover {
+      background-color: var(--primary-blue);
+      color: var(--white);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-blue);
+      color: var(--white);
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>HerOS</h1>
+    <p>Empowering resilience through technology for women and children.</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#shelters">Shelters</a>
+    <a href="#hotlines">Hotlines</a>
+    <a href="#safe-routes">Safe Routes</a>
+    <a href="#disaster-prediction">Disaster Prediction</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section-content">
+    <h2 class="section-title">Welcome to HerOS</h2>
+    <p>HerOS (Humanitarian Empowerment and Resilience Operations System) is an integrated platform designed to provide gender-responsive support during and after climate-related disasters. Utilizing NASA’s real-time data, HerOS offers disaster prediction, safe evacuation routes, and access to secure shelters, prioritizing the safety of women and children.</p>
+    <h3>Our Vision</h3>
+    <p>To empower and protect women and children during disasters through advanced, real-time digital support systems.</p>
+    <h3>Our Mission</h3>
+    <p>HerOS is committed to delivering safe, reliable, and essential resources to vulnerable populations, with a strong emphasis on inclusivity, safety, and continuity in times of crisis.</p>
+    <h3>Our Goals</h3>
+    <ul>
+      <li>Provide timely, accurate disaster predictions to minimize risk.</li>
+      <li>Ensure safe evacuation routes are accessible for women and children.</li>
+      <li>Connect users to crucial support services including GBV hotlines and healthcare.</li>
+      <li>Support educational continuity through digital classrooms during disruptions.</li>
+      <li>Collect gender-disaggregated data to inform inclusive and effective policymaking.</li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section-content">
+    <h2 class="section-title">Education (Learning Management System)</h2>
+    <p>Select a subject to access educational resources:</p>
+    <div class="subject-div">Mathematics</div>
+    <div class="subject-div">Science</div>
+    <div class="subject-div">History</div>
+    <div class="subject-div">Geography</div>
+    <div class="subject-div">English Language</div>
+    <!-- Add more subjects as needed -->
+  </section>
+
+  <!-- Shelters Section -->
+  <section id="shelters" class="section-content">
+    <h2 class="section-title">Shelters (Access to Secure Shelters)</h2>
+    <p>Access real-time information on safe shelters in your area to ensure secure evacuation locations during crises.</p>
+  </section>
+
+  <!-- Hotlines Section -->
+  <section id="hotlines" class="section-content">
+    <h2 class="section-title">Hotlines (GBV & Healthcare Support Services)</h2>
+    <p>Connect instantly with support hotlines for healthcare and GBV services, ensuring quick access to critical assistance.</p>
+  </section>
+
+  <!-- Safe Routes Section -->
+  <section id="safe-routes" class="section-content">
+    <h2 class="section-title">Safe Routes (Evacuation Routes)</h2>
+    <p>HerOS provides safe, accessible routes for evacuation, designed to prioritize the safety of women and children in affected areas.</p>
+  </section>
+
+  <!-- Disaster Prediction Section -->
+  <section id="disaster-prediction" class="section-content">
+    <h2 class="section-title">Disaster Prediction</h2>
+    <p>Stay informed with HerOS’s disaster prediction updates, using NASA’s real-time data to help you prepare in advance.</p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-content">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-category">
+      <h3>Disaster Prediction FAQs</h3>
+      <div class="faq-item">
+        <p><strong>Q1: How does HerOS provide disaster prediction updates?</strong></p>
+        <p>A1: HerOS integrates NASA’s real-time climate data to give accurate disaster predictions, helping users prepare and stay informed during potential crises.</p>
+      </div>
+      <!-- Continue with all disaster prediction FAQs from your list -->
+    </div>
+
+    <div class="faq-category">
+      <h3>Safe Evacuation Routes FAQs</h3>
+      <div class="faq-item">
+        <p><strong>Q1: How does HerOS determine safe evacuation routes?</strong></p>
+        <p>A1: HerOS utilizes satellite imagery and real-time data to suggest safe routes for evacuation, avoiding dangerous areas and prioritizing the most secure paths.</p>
+      </div>
+      <!-- Continue with all safe routes FAQs from your list -->
+    </div>
+
+    <div class="faq-category">
+      <h3>Access to Secure Shelters FAQs</h3>
+      <div class="faq-item">
+        <p><strong>Q1: How does HerOS help me find secure shelters during a disaster?</strong></p>
+        <p>A1: HerOS provides a real-time map showing nearby secure shelters, prioritizing locations that are safe and equipped to support vulnerable groups like women and children.</p>
+      </div>
+      <!-- Continue with all shelter access FAQs from your list -->
+    </div>
+
+    <div class="faq-category">
+      <h3>Support Services (GBV Hotlines & Healthcare) FAQs</h3>
+      <div class="faq-item">
+        <p><strong>Q1: How can I access GBV hotlines and healthcare services during a crisis?</strong></p>
+        <p>A1: HerOS provides quick access to hotlines and healthcare services, allowing users to connect with assistance resources immediately when needed.</p>
+      </div>
+      <!-- Continue with all support service FAQs from your list -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 HerOS | Empowering resilience through technology</p>
+  </footer>
+</body>
+</html>
